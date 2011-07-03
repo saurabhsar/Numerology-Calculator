@@ -42,11 +42,11 @@ Widget::Widget(QWidget *parent) :
     QObject::connect(button2,SIGNAL(clicked()),window,SLOT(close()));
     QObject::connect(spin1,SIGNAL(valueChanged(QString)),Label,SLOT(setText(QString)));
 
-    tab1->setTabBar(tab2);
-    tab1->setTabText(0,tab1);
-    tab1->setTabText(1,tab2);
-    tab1->setLayout(layout2);
-//    window->setLayout(layout2);
+//    tab1->setTabBar(tab2);
+//    tab1->setTabText(0,tab1);
+//    tab1->setTabText(1,tab2);
+//   tab1->setLayout(layout2);
+    window->setLayout(layout2);
     window->setMaximumHeight(60);
     window->setMaximumWidth(200);
     window->show();
